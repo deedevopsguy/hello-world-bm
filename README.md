@@ -1,12 +1,64 @@
 Deploying a "Hello World" Application on AWS
 
-This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerized approach. The application is built using Python and Flask, and is containerised using Docker.
+This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerised approach. The application is built using Python and Flask, and is containerised using Docker.
 
 Prerequisites
 
 To follow along with this project, you will need:
 
-    1) An AWS account with access to the ECS service
-    2) Docker installed on your local machine
-    3) Basic familiarity with Python and Flask
+1) An AWS account with access to the ECS service
+2) Docker installed on your local machine
+3) Basic familiarity with Python and Flask
     
+Building and Running the Application Locally
+
+To build and run the application locally, you can follow these steps:
+
+1) Clone the repository to your local machine/terminal:
+
+
+git clone https://github.com/maroccloudguy/hello-world-aws.git
+
+ 
+2) Navigate to the project directory and build the Docker image:
+
+cd hello-world-aws
+docker build -t helloworld:latest .
+
+
+3) Run the Docker container:
+
+docker run -p 8080:8080 helloworld:latest
+
+
+4) Visit http://localhost:8080 in your web browser to see the "Hello World" message.
+
+
+Deploying the Application on AWS:
+
+To deploy the application on AWS, you can follow these steps:
+
+5) Create an ECS cluster in the AWS Management Console.
+
+6) Create an ECS task definition that defines the parameters for the container.
+
+7) Create an ECS service that will run the container on a cluster of EC2 instances.
+
+8) Deploy the task to the service.
+
+9) Access the deployed application by visiting the public IP address of the EC2 instance on port 8080.
+
+
+Repository Contents
+
+This repository contains the following files:
+
+1) Dockerfile: The Dockerfile for the containerised application.
+2) app.py: The source code for the "Hello World" application.
+3) requirements.txt: The requirements file for the Python dependencies.
+4) ecs_task_definition.json: The JSON file for the ECS task definition.
+5) ecs_service.json: The JSON file for the ECS service.
+
+Conclusion
+
+This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerised approach. By following the steps outlined in this README file, you can learn how to deploy your own applications on AWS using the ECS service.
