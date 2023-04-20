@@ -16,12 +16,13 @@ To build and run the application locally, you can follow these steps:
 1) Clone the repository to your local machine/terminal:
 
 
-git clone https://github.com/maroccloudguy/hello-world-aws.git
+git clone https://github.com/maroccloudguy/hello-world-bm.git
+
 
  
 2) Navigate to the project directory and build the Docker image:
 
-cd hello-world-aws
+cd hello-world-bm
 docker build -t helloworld:latest .
 
 
