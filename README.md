@@ -1,4 +1,4 @@
-Deploying a "Hello World" Application on AWS
+Deploying a "Hello World" Application on Bare Metal
 
 This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerised approach. The application is built using Python and Flask, and is containerised using Docker.
 
@@ -6,9 +6,8 @@ Prerequisites
 
 To follow along with this project, you will need:
 
-1) An AWS account with access to the ECS service
-2) Docker installed on your local machine
-3) Basic familiarity with Python and Flask
+1) Docker installed on your local machine
+2) Basic familiarity with Python and Flask
     
 Building and Running the Application Locally
 
@@ -34,21 +33,6 @@ docker run -p 8080:8080 helloworld:latest
 4) Visit http://localhost:8080 in your web browser to see the "Hello World" message.
 
 
-Deploying the Application on AWS:
-
-To deploy the application on AWS, you can follow these steps:
-
-5) Create an ECS cluster in the AWS Management Console.
-
-6) Create an ECS task definition that defines the parameters for the container.
-
-7) Create an ECS service that will run the container on a cluster of EC2 instances.
-
-8) Deploy the task to the service.
-
-9) Access the deployed application by visiting the public IP address of the EC2 instance on port 8080.
-
-
 Repository Contents
 
 This repository contains the following files:
@@ -61,4 +45,4 @@ This repository contains the following files:
 
 Conclusion
 
-This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerised approach. By following the steps outlined in this README file, you can learn how to deploy your own applications on AWS using the ECS service.
+This project demonstrates how to deploy a simple "Hello World" application on Bare Metal using a containerised approach. By following the steps outlined in this README file, you can learn how to deploy your own applications on Bare Metal.
