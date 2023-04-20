@@ -1,6 +1,6 @@
 Deploying a "Hello World" Application on Bare Metal
 
-This project demonstrates how to deploy a simple "Hello World" application on AWS using a containerised approach. The application is built using Python and Flask, and is containerised using Docker.
+This project demonstrates how to deploy a simple "Hello World" application on Bare Metal using a containerised approach. The application is built using Python and Flask, and is containerised using Docker.
 
 Prerequisites
 
@@ -40,8 +40,7 @@ This repository contains the following files:
 1) Dockerfile: The Dockerfile for the containerised application.
 2) app.py: The source code for the "Hello World" application.
 3) requirements.txt: The requirements file for the Python dependencies.
-4) ecs_task_definition.json: The JSON file for the ECS task definition.
-5) ecs_service.json: The JSON file for the ECS service.
+
 
 Conclusion
 
