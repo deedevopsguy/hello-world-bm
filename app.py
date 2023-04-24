@@ -12,5 +12,5 @@ def hello():
 # Check whether the current script is being executed as the main program
 if __name__ == '__main__':
     # Start the Flask application with the default host "0.0.0.0", which allows the application to be accessed from any network interface
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080)
 
